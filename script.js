@@ -31,3 +31,13 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => revealObserver.observe(item));
+
+
+function trackWhatsAppLead() {
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead');
+  }
+  if (typeof clarity === 'function') {
+    clarity('event', 'whatsapp_click');
+  }
+}
