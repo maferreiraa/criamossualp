@@ -298,6 +298,46 @@ footer strong { color: var(--orange); font-size: 1.8rem; }
   .hero-meta { flex-direction: column; }
   .feature-grid, .steps { grid-template-columns: 1fr; }
   .section-card { border-radius: 18px; }
+
+  @media (max-width: 768px) {
+  .final-cta,
+  .cta-final,
+  .closing-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 32px 24px;
+    overflow: hidden;
+  }
+
+  .final-cta h2,
+  .cta-final h2,
+  .closing-cta h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 0.95;
+    word-break: normal;
+  }
+
+  .final-cta p,
+  .cta-final p,
+  .closing-cta p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .final-cta .btn,
+  .cta-final .btn,
+  .closing-cta .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
   .about-photo { min-height: 280px; }
   footer { flex-direction: column; gap: 10px; }
 }
