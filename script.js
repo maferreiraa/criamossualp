@@ -1,23 +1,33 @@
 const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-menuToggle?.addEventListener('click', () => {
-  const open = nav.classList.toggle('is-open');
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
-nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('is-open')));
+const navMenu = document.querySelector('.nav-menu');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const visual = document.querySelector('.hero-visual');
-visual?.addEventListener('mousemove', (e) => {
-  const rect = visual.getBoundingClientRect();
-  const x = (e.clientX - rect.left) / rect.width - 0.5;
-  const y = (e.clientY - rect.top) / rect.height - 0.5;
-  visual.style.setProperty('--mx', x);
-  visual.style.setProperty('--my', y);
-});
+  navMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const revealItems = document.querySelectorAll('.section-card');
+revealItems.forEach((item) => item.classList.add('reveal'));
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+revealItems.forEach((item) => revealObserver.observe(item));
