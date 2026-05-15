@@ -58,18 +58,20 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
+   <main>
+    <section class="hero hero-pain" aria-labelledby="hero-title">
       <div class="hero-bg"></div>
 
-      <div class="hero-visual" aria-label="Mockup de landing page MFX em notebook e celular">
-        <img src="assets/pccamaleao.png" alt="Notebook e celular com landing page premium da MFX Creativee e camaleão laranja" />
-      </div>
-
       <div class="hero-copy">
-        <div class="eyebrow">⚡ Landing pages para infoprodutores</div>
-        <h1 id="hero-title"><span>A</span> estrutura que transforma clicks em clientes.</h1>
-        <p>Landing pages estratégicas, pensadas para lançar, validar e <strong>vender seu infoproduto</strong> todos os dias.</p>
+        <div class="eyebrow">⚡ Landing pages para infoprodutores iniciantes</div>
+        <h1 id="hero-title"><span>Seu infoproduto não está parado por falta de potencial.</span> Está parado porque a parte técnica virou um labirinto.</h1>
+        <p class="hero-subtitle">Você não precisa perder dias tentando aprender copy, design, domínio, hospedagem e código. Eu transformo sua ideia em uma <strong>landing page profissional, pronta para vender no WhatsApp</strong>.</p>
+
+        <div class="pain-strip" aria-label="Dores que travam o lançamento">
+          <div>😵 Você fica pulando de tutorial em tutorial</div>
+          <div>⏳ O lançamento atrasa porque a página nunca fica pronta</div>
+          <div>📉 A oferta parece amadora e perde confiança</div>
+        </div>
 
         <div class="hero-offer" aria-label="Condição principal da landing page">
           <div>
@@ -86,22 +88,54 @@
           </div>
         </div>
 
-        <div class="hero-pills" aria-label="Diferenciais da landing page">
-          <div>✍️ Copy persuasiva</div>
-          <div>🎨 Design premium</div>
-          <div>🎯 Foco em conversão</div>
-          <div>📱 100% responsiva</div>
-        </div>
-
-        <a class="hero-cta" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20lan%C3%A7ar%20meu%20produto%20com%20uma%20landing%20page." target="_blank" rel="noopener" onclick="if(window.fbq){fbq('track','Lead')} if(window.clarity){clarity('event','whatsapp_click')}">
-          Quero lançar meu produto agora
+        <a class="hero-cta" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20uma%20LP%20para%20lan%C3%A7ar%20meu%20infoproduto." target="_blank" rel="noopener" onclick="trackWhatsAppLead()">
+          Quero destravar meu lançamento
           <span>↗</span>
         </a>
 
-        <div class="hero-meta">
-          <div><span>Entrega em até</span><strong>72h úteis</strong></div>
-          <div><span>Garantia de</span><strong>15 dias</strong></div>
-        </div>
+        <p class="microcopy">Domínio e hospedagem são contratados à parte. O prazo começa após briefing e envio dos materiais.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="Mockup de landing page MFX em notebook e celular">
+        <img src="assets/pccamaleao.png" alt="Notebook e celular com landing page premium da MFX Creativee e camaleão laranja" />
+      </div>
+    </section>
+
+    <section class="section-card pain-solution" id="dor">
+      <div class="section-kicker">O problema real</div>
+      <h2>Você acha que está economizando fazendo sozinho. <span>Mas está pagando com tempo, energia e lançamento atrasado.</span></h2>
+      <div class="pain-grid">
+        <article>
+          <strong>01</strong>
+          <h3>Você trava antes de vender</h3>
+          <p>A ideia existe, o produto existe, mas a estrutura não sai do lugar. A página vira mais uma pendência na sua cabeça.</p>
+        </article>
+        <article>
+          <strong>02</strong>
+          <h3>A tecnologia vira obstáculo</h3>
+          <p>Domínio, hospedagem, layout, responsividade, botão, copy, publicação. Parece simples até você precisar fazer tudo junto.</p>
+        </article>
+        <article>
+          <strong>03</strong>
+          <h3>Sua oferta perde valor</h3>
+          <p>Quando a página parece improvisada, o lead sente insegurança antes mesmo de entender o que você vende.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card solution-block">
+      <div class="solution-copy">
+        <div class="eyebrow">⚡ Eu sou a solução técnica e criativa</div>
+        <h2>Você cria o produto. <span>Eu monto a estrutura para ele parecer profissional e vender.</span></h2>
+        <p>Eu cuido da copy, do design, do código e da organização da sua oferta em uma página clara, bonita, responsiva e pensada para levar o cliente direto para o WhatsApp.</p>
+        <a class="ghost-cta" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20entender%20como%20funciona%20a%20LP%20para%20infoprodutos." target="_blank" rel="noopener" onclick="trackWhatsAppLead()">Conversar com a Marina no WhatsApp</a>
+      </div>
+      <div class="solution-panel">
+        <div class="panel-line"><span>Copy estratégica</span><strong>incluída</strong></div>
+        <div class="panel-line"><span>Design premium</span><strong>incluído</strong></div>
+        <div class="panel-line"><span>HTML + CSS + JS</span><strong>incluído</strong></div>
+        <div class="panel-line"><span>Foco no WhatsApp</span><strong>incluído</strong></div>
+        <div class="panel-line muted"><span>Domínio e hospedagem</span><strong>à parte</strong></div>
       </div>
     </section>
 
@@ -111,10 +145,10 @@
         <article class="compare-card negative">
           <h3>Tentar fazer sozinho</h3>
           <ul>
-            <li>Perder dias tentando aprender ferramenta.</li>
-            <li>Página amadora que não passa confiança.</li>
-            <li>Dúvidas técnicas que travam seu lançamento.</li>
-            <li>Focar em ferramenta, e não no que importa: vender.</li>
+            <li>Perder dias vendo aulas e tutoriais.</li>
+            <li>Ficar inseguro com design, copy e tecnologia.</li>
+            <li>Publicar uma página que não transmite confiança.</li>
+            <li>Adiar o lançamento enquanto tenta resolver detalhes técnicos.</li>
           </ul>
         </article>
 
@@ -123,24 +157,30 @@
         <article class="compare-card positive">
           <h3>Ter sua LP pronta com a MFX</h3>
           <ul>
-            <li>Sua LP pronta em até 72h.</li>
-            <li>Design profissional + copy estratégica.</li>
-            <li>Estrutura feita para converter no WhatsApp.</li>
-            <li>Você foca no que faz de melhor: criar e vender.</li>
+            <li>Sua página pronta em até 72h úteis.</li>
+            <li>Oferta organizada com copy estratégica.</li>
+            <li>Design premium para aumentar percepção de valor.</li>
+            <li>Botões focados em gerar conversa no WhatsApp.</li>
           </ul>
         </article>
       </div>
     </section>
 
     <section class="features section-card" id="entrega">
-      <h2>Sua LP pronta para <span>vender.</span></h2>
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">O que você recebe</div>
+          <h2>Sua LP pronta para <span>validar, lançar e vender.</span></h2>
+        </div>
+        <p>Uma estrutura enxuta, direta e pensada para quem precisa sair do improviso sem contratar uma agência cara.</p>
+      </div>
       <div class="feature-grid">
-        <article><strong>⚡</strong><h3>Entrega rápida</h3><p>Sua página pronta em até 72h úteis.</p></article>
-        <article><strong>✍️</strong><h3>Copy estratégica</h3><p>Textos que conectam, convencem e vendem.</p></article>
-        <article><strong>🖥️</strong><h3>Design premium</h3><p>Visual moderno que gera autoridade e confiança.</p></article>
-        <article><strong>💬</strong><h3>Foco no WhatsApp</h3><p>Botões estrategicamente posicionados para conversas.</p></article>
-        <article><strong>📱</strong><h3>100% responsiva</h3><p>Perfeita em celular, tablet e desktop.</p></article>
-        <article><strong>⌘</strong><h3>Tecnologia leve</h3><p>HTML, CSS e JS sem plataformas pesadas.</p></article>
+        <article><strong>⚡</strong><h3>Entrega rápida</h3><p>Sua página pronta em até 72h úteis após briefing e materiais.</p></article>
+        <article><strong>✍️</strong><h3>Copy estratégica</h3><p>Texto que explica sua oferta, quebra objeções e conduz para o CTA.</p></article>
+        <article><strong>🖥️</strong><h3>Design premium</h3><p>Visual moderno para aumentar autoridade e valor percebido.</p></article>
+        <article><strong>💬</strong><h3>Foco no WhatsApp</h3><p>Botões e chamadas posicionadas para gerar conversas qualificadas.</p></article>
+        <article><strong>📱</strong><h3>Mobile-first</h3><p>Experiência pensada primeiro para quem chega pelo anúncio no celular.</p></article>
+        <article><strong>&lt;/&gt;</strong><h3>Tecnologia leve</h3><p>HTML, CSS e JS: página rápida, sem WordPress e sem excesso.</p></article>
       </div>
     </section>
 
@@ -148,24 +188,26 @@
       <div>
         <span class="eyebrow">⚡ Processo simples e estratégico</span>
         <h2>Do briefing à entrega em poucos passos.</h2>
+        <p>O prazo de 72h começa depois da reunião de briefing e do envio dos materiais necessários para criar sua página.</p>
       </div>
       <div class="steps">
-        <article><span>01</span><h3>Briefing</h3><p>Reunião para entender seu produto, público e objetivos.</p></article>
-        <article><span>02</span><h3>Material</h3><p>Você envia conteúdo, textos, imagens e referências.</p></article>
-        <article><span>03</span><h3>Criação</h3><p>Desenvolvemos sua LP com foco total em conversão.</p></article>
-        <article><span>04</span><h3>Entrega</h3><p>Sua landing page pronta, testada e publicada.</p></article>
+        <article><span>01</span><h3>Briefing</h3><p>Você me conta tudo sobre o infoproduto, público, promessa, oferta e objetivo.</p></article>
+        <article><span>02</span><h3>Material</h3><p>Você envia o que já tiver: textos, imagens, referências, links, checkout ou WhatsApp.</p></article>
+        <article><span>03</span><h3>Criação</h3><p>Eu estruturo copy, design e código com foco em clareza e conversão.</p></article>
+        <article><span>04</span><h3>Entrega</h3><p>Sua landing page é entregue pronta, testada e publicada no domínio combinado.</p></article>
       </div>
     </section>
 
     <section class="price section-card">
       <div>
         <span class="eyebrow">⚡ Investimento</span>
-        <h2>LP completa por apenas <strong>R$ 350,00</strong></h2>
+        <h2>LP completa por <strong>R$ 350,00</strong></h2>
       </div>
       <ul>
         <li>Entrega em até 72h úteis</li>
         <li>15 dias de garantia</li>
         <li>Copy + design + desenvolvimento</li>
+        <li>Botões para WhatsApp</li>
         <li>Suporte durante o processo</li>
       </ul>
       <p>Domínio e hospedagem são contratados à parte.</p>
@@ -178,8 +220,8 @@
       <div class="about-copy">
         <span class="eyebrow">⚡ Sobre a expert</span>
         <h2>Quem vai criar <span>sua LP</span></h2>
-        <p>Olá, eu sou Marina Ferreira, estrategista criativa especializada em soluções digitais, criação com IA e desenvolvimento de estruturas online para negócios que precisam vender com mais clareza.</p>
-        <p>Há mais de 10 anos atuo no marketing digital ajudando pessoas e marcas a transformarem ideias em experiências visuais estratégicas, com posicionamento, conteúdo e design pensados para conversão.</p>
+        <p>Eu sou Marina Ferreira, profissional criativa especializada em estratégias digitais, criação com IA e desenvolvimento de soluções visuais para negócios que precisam se apresentar melhor e vender com mais clareza.</p>
+        <p>Há mais de 10 anos atuo no marketing digital transformando ideias em materiais, páginas e experiências que organizam ofertas, elevam percepção de valor e ajudam pessoas a tirarem projetos do papel com mais velocidade e profissionalismo.</p>
       </div>
     </section>
 
@@ -190,20 +232,22 @@
       </div>
       <div class="faq-list">
         <details><summary>Tem alguma mensalidade?</summary><p>Não pela criação da página. Domínio e hospedagem são contratados à parte, conforme a necessidade do projeto.</p></details>
-        <details><summary>Funciona para o meu nicho?</summary><p>Funciona especialmente bem para infoprodutos, mentorias, consultorias, ebooks, cursos, aulas e ofertas que precisam direcionar o cliente para o WhatsApp.</p></details>
+        <details><summary>Funciona para o meu nicho?</summary><p>Funciona especialmente bem para infoprodutos, mentorias, consultorias, ebooks, cursos, aulas, comunidades e ofertas que precisam levar o cliente para o WhatsApp.</p></details>
         <details><summary>Qual o prazo de entrega?</summary><p>Após a reunião de briefing e envio do material, começa o prazo de até 72h úteis para entrega da LP.</p></details>
         <details><summary>Posso solicitar alterações?</summary><p>Sim. Você tem 15 dias de garantia para ajustes relacionados à entrega combinada.</p></details>
       </div>
     </section>
 
     <section class="final-cta section-card">
-      <h2>Pronto para lançar com profissionalismo?</h2>
-      <p>Sua oferta merece uma estrutura à altura do seu conhecimento.</p>
-      <a class="hero-cta" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20lan%C3%A7ar%20meu%20produto%20com%20uma%20landing%20page." target="_blank" rel="noopener" onclick="if(window.fbq){fbq('track','Lead')} if(window.clarity){clarity('event','whatsapp_click')}">Quero minha LP agora</a>
+      <div>
+        <h2>Pronto para parar de adiar seu lançamento?</h2>
+        <p>Me chama no WhatsApp e vamos transformar sua ideia em uma página clara, profissional e pronta para vender.</p>
+      </div>
+      <a class="hero-cta" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20uma%20LP%20para%20lan%C3%A7ar%20meu%20infoproduto." target="_blank" rel="noopener" onclick="trackWhatsAppLead()">Quero minha LP agora</a>
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20lan%C3%A7ar%20meu%20produto%20com%20uma%20landing%20page." target="_blank" rel="noopener" onclick="if(window.fbq){fbq('track','Lead')} if(window.clarity){clarity('event','whatsapp_click')}" aria-label="Chamar no WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/5534984187265?text=Oi%2C%20Marina%21%20Quero%20uma%20LP%20para%20lan%C3%A7ar%20meu%20infoproduto." target="_blank" rel="noopener" onclick="trackWhatsAppLead()" aria-label="Chamar no WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
       <path d="M16.04 3.2C8.99 3.2 3.25 8.86 3.25 15.81c0 2.22.6 4.38 1.72 6.28L3.14 28.8l6.93-1.8a12.98 12.98 0 0 0 5.97 1.49c7.05 0 12.78-5.66 12.78-12.61S23.09 3.2 16.04 3.2Zm0 22.9c-1.86 0-3.68-.49-5.26-1.42l-.38-.22-4.11 1.07 1.1-3.9-.25-.4a10.02 10.02 0 0 1-1.54-5.42c0-5.65 4.69-10.25 10.45-10.25s10.45 4.6 10.45 10.25-4.69 10.29-10.46 10.29Zm5.73-7.7c-.31-.16-1.86-.9-2.15-1-.29-.1-.5-.16-.72.16-.21.31-.83 1-.99 1.2-.18.21-.36.23-.67.08-.31-.16-1.32-.48-2.51-1.53-.93-.82-1.56-1.83-1.74-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.72-1.7-.99-2.33-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.54.08-.83.39-.29.31-1.09 1.05-1.09 2.56s1.12 2.97 1.28 3.18c.16.21 2.21 3.32 5.35 4.66.75.31 1.33.5 1.78.64.75.23 1.43.2 1.97.12.6-.09 1.86-.75 2.12-1.47.26-.73.26-1.35.18-1.47-.08-.13-.29-.21-.6-.36Z"/>
     </svg>
