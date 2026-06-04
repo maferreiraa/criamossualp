@@ -60,3 +60,14 @@ Coloque na pasta `assets` exatamente com estes nomes:
 
 O Hero foi configurado como imagem pura, sem texto sobreposto.
 O fundo do site foi alterado para dark/tecnológico.
+
+
+## Prints do portfólio
+
+Coloque na pasta `assets` exatamente com estes nomes:
+
+- `mfxcreativee.webp`
+- `noemiahalvez.webp`
+- `alcar.webp`
+
+Os cards usam uma moldura fixa (`portfolio-screen`) com `object-fit: cover`, então as imagens não expandem o espaço do card.

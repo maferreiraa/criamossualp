@@ -678,3 +678,50 @@ h3 {
     align-items: center;
   }
 }
+
+
+/* Moldura fixa dos prints do portfólio */
+.portfolio-screen {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.04);
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.portfolio-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+  border-radius: inherit;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .45s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.035);
+}
+
+@media (min-width: 760px) {
+  .portfolio-screen {
+    height: 240px;
+  }
+}
+
+@media (min-width: 980px) {
+  .portfolio-screen {
+    height: 260px;
+  }
+}
