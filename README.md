@@ -71,3 +71,12 @@ Coloque na pasta `assets` exatamente com estes nomes:
 - `alcar.webp`
 
 Os cards usam uma moldura fixa (`portfolio-screen`) com `object-fit: cover`, então as imagens não expandem o espaço do card.
+
+
+## Selo final
+
+Coloque na pasta `assets`:
+
+- `selo.webp`
+
+Ele aparece no CTA final, acima do título.

@@ -725,3 +725,31 @@ h3 {
     height: 260px;
   }
 }
+
+
+/* Selo final da garantia de 72h */
+.final-seal-wrap {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  filter: drop-shadow(0 18px 35px rgba(224, 105, 93, 0.32));
+}
+
+.final-seal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 760px) {
+  .final-seal-wrap {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 28px;
+  }
+}
