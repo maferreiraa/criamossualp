@@ -48,3 +48,15 @@ O texto atual informa que a garantia depende de tráfego pago ativo e que o inve
 - Parcelamento em até 5x sem juros no cartão
 - Parcelamento em até 10x via NuPay
 - Garantia de 15 dias para primeira conversão/venda com tráfego pago ativo
+
+
+## Imagens implementadas nesta versão
+
+Coloque na pasta `assets` exatamente com estes nomes:
+
+- `hero-sualp.webp`
+- `primeira-dobra.webp`
+- `2dobra.webp`
+
+O Hero foi configurado como imagem pura, sem texto sobreposto.
+O fundo do site foi alterado para dark/tecnológico.
